@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diego Vargas — Administrador de Sistemas</title>
+  <meta name="description" content="Portfolio de Diego Vargas. Administrador de sistemas informáticos, automatización, Linux, homelab y DevOps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EDV%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-logo">DV<span class="nav-logo-dot">.</span></a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#homelab">Homelab</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="#contacto" class="btn btn-primary btn-small nav-cta">Contacto</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <span class="hero-badge">Administrador de Sistemas Informáticos en Red</span>
+          <h1 class="hero-title">Diego Vargas</h1>
+          <p class="hero-subtitle">Administrador de sistemas apasionado por la automatización y la infraestructura</p>
+          <p class="hero-text">
+            Titulado en ASIR, con experiencia internacional en tres FCTs (España, Italia y Portugal) y un
+            homelab personal en Proxmox donde despliego servicios reales. Trabajo principalmente con Linux y,
+            si algo se puede automatizar, puedes contar conmigo.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-outline" href="https://docs.diegovargas.es/" target="_blank" rel="noopener">Documentación</a>
+            <a class="btn btn-outline" href="#contacto">Contacto</a>
+          </div>
+          <ul class="hero-social">
+            <li><a href="https://github.com/f1rul4yx" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/diegovargasgomezderequena/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://docs.diegovargas.es/" target="_blank" rel="noopener">Docs</a></li>
+            <li><a href="mailto:hola@diegovargas.es">Email</a></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal">
+          <img class="hero-avatar" src="https://avatars.githubusercontent.com/u/116504983?s=64&v=4" alt="Avatar de Diego Vargas" width="200" height="200" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="prose">
+          <p>
+            Administrador de sistemas con formación continua en entornos Linux. Experiencia internacional en
+            3 FCTs (España, Italia y Portugal) cubriendo mantenimiento de servidores, gestión de hosting y
+            reparación de equipos. Apasionado del ecosistema open source, con homelab personal en Proxmox y
+            proyectos de automatización con Bash.
+          </p>
+          <p>
+            Titulado en Administración de Sistemas Informáticos en Red (ASIR), disfruto creando scripts que
+            facilitan tareas, diseñando arquitecturas en cloud y montando escenarios completos con servicios
+            reales. Si algo se puede automatizar, puedes contar conmigo. Trabajo principalmente con Linux (Arch)
+            y cada día sigo aprendiendo y construyendo soluciones que marquen la diferencia.
+          </p>
+        </div>
+        <div class="facts">
+          <div class="fact">
+            <span class="fact-label">Ubicación</span>
+            <span class="fact-value">Sevilla, España</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Nacimiento</span>
+            <span class="fact-value">17/02/2003</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Nacionalidad</span>
+            <span class="fact-value">Española</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Idiomas</span>
+            <span class="fact-value">Español (nativo), Inglés (B1)</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Conducir</span>
+            <span class="fact-value">Carnet B</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="section">
+      <div class="container">
+        <h2 class="section-title">Stack tecnológico</h2>
+        <p class="section-subtitle">
+          Herramientas y tecnologías con las que trabajo día a día en la administración de sistemas, la
+          infraestructura y la automatización.
+        </p>
+        <div class="stack-grid">
+          <article class="stack-card">
+            <h3>Lenguajes</h3>
+            <div class="badges">
+              <span class="badge">Bash</span>
+              <span class="badge">Python</span>
+              <span class="badge">SQL</span>
+              <span class="badge">PL/SQL</span>
+              <span class="badge">PHP</span>
+              <span class="badge">Flask</span>
+            </div>
+          </article>
+          <article class="stack-card">
+            <h3>Infraestructura y DevOps</h3>
+            <div class="badges">
+              <span class="badge">Linux</span>
+              <span class="badge">Debian</span>
+              <span class="badge">Arch</span>
+              <span class="badge">Docker</span>
+              <span class="badge">Kubernetes</span>
+              <span class="badge">Proxmox</span>
+              <span class="badge">KVM</span>
+              <span class="badge">Ansible</span>
+              <span class="badge">Terraform</span>
+              <span class="badge">OpenTofu</span>
+              <span class="badge">Git</span>
+              <span class="badge">Jenkins</span>
+              <span class="badge">Cloud</span>
+            </div>
+          </article>
+          <article class="stack-card">
+            <h3>Herramientas y servicios</h3>
+            <div class="badges">
+              <span class="badge">Apache</span>
+              <span class="badge">Nginx</span>
+              <span class="badge">Postfix</span>
+              <span class="badge">Dovecot</span>
+              <span class="badge">Roundcube</span>
+              <span class="badge">TCP/IP</span>
+              <span class="badge neutral">SQL / NoSQL</span>
+              <span class="badge">Notion</span>
+            </div>
+          </article>
+          <article class="stack-card">
+            <h3>Áreas de interés</h3>
+            <div class="badges">
+              <span class="badge">Redes</span>
+              <span class="badge">Cloud Computing</span>
+              <span class="badge">Bases de Datos</span>
+              <span class="badge">Automatización</span>
+              <span class="badge">Scripting</span>
+              <span class="badge">Administración de Sistemas</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Experiencia</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-period">02/2026 – 05/2026</span>
+            <h3 class="timeline-title">Comvive</h3>
+            <p class="timeline-meta">Técnico de Sistemas y Gestión de Hosting · Sevilla, España</p>
+            <ul class="timeline-list">
+              <li>Monitorización de servidores y respuesta inmediata ante caídas.</li>
+              <li>Gestión de tickets y resolución de problemas de clientes.</li>
+              <li>Mitigación de ataques externos y mantenimiento de servicios.</li>
+              <li>Automatización de tareas mediante scripts en Bash.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-period">03/2024 – 06/2024</span>
+            <h3 class="timeline-title">Revolution Store</h3>
+            <p class="timeline-meta">Técnico en Sistemas Informáticos · Barcelona Pozzo di Gotto, Italia</p>
+            <ul class="timeline-list">
+              <li>Reparación de equipos electrónicos (ordenadores, PS4, teléfonos).</li>
+              <li>Limpieza y mantenimiento de equipos electrónicos.</li>
+              <li>Preparación de equipos: instalación de SO, bypass Google.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-period">04/2022 – 06/2022</span>
+            <h3 class="timeline-title">Innuos</h3>
+            <p class="timeline-meta">Montador de Equipos Electrónicos · Faro, Portugal</p>
+            <ul class="timeline-list">
+              <li>Preparación de material (cables, soldadura de estaño, limado de chasis).</li>
+              <li>Montaje de equipos electrónicos.</li>
+            </ul>
+          </article>
+        </div>
+        <h3 class="subheading">Formación</h3>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-period">09/2024 – 05/2026</span>
+            <h3 class="timeline-title">IES Gonzalo Nazareno</h3>
+            <p class="timeline-meta">Grado Superior: Administración de Sistemas Informáticos en Red (en curso)</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-period">09/2022 – 06/2024</span>
+            <h3 class="timeline-title">IES Gonzalo Nazareno</h3>
+            <p class="timeline-meta">Grado Medio: Sistemas Microinformáticos y Redes</p>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-period">09/2020 – 06/2022</span>
+            <h3 class="timeline-title">Colegio Bilingüe Antonio Gala</h3>
+            <p class="timeline-meta">FP Básica: Sistemas Microinformáticos y Redes</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <p class="section-subtitle">
+          Herramientas, scripts y proyectos personales que he creado para automatizar tareas y construir
+          infraestructura propia.
+        </p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-head">
+              <h3><a href="https://github.com/f1rul4yx/bspwm-setup" target="_blank" rel="noopener">bspwm-setup</a></h3>
+              <a class="project-link" href="https://github.com/f1rul4yx/bspwm-setup" target="_blank" rel="noopener" aria-label="Ver bspwm-setup en GitHub">↗</a>
+            </div>
+            <p>Herramienta para personalizar y configurar sistemas Linux de forma automatizada.</p>
+            <ul>
+              <li>Automatización de la instalación y configuración de bspwm, kitty, polybar, picom y zsh.</li>
+              <li>Gestión de dependencias, atajos de teclado y personalización visual.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="badge">Bash</span>
+              <span class="badge">Linux</span>
+              <span class="badge">Automatización</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3><a href="https://github.com/f1rul4yx/proxmox-tools" target="_blank" rel="noopener">proxmox-tools</a></h3>
+              <a class="project-link" href="https://github.com/f1rul4yx/proxmox-tools" target="_blank" rel="noopener" aria-label="Ver proxmox-tools en GitHub">↗</a>
+            </div>
+            <p>Herramientas para gestionar Proxmox VE de forma remota usando la API REST.</p>
+            <ul>
+              <li>Creación de contenedores LXC con configuración base automática.</li>
+              <li>Actualización remota de máquinas y despliegue de configuraciones vía SSH.</li>
+              <li>Ejecución de comandos en múltiples máquinas con un solo script.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="badge">Bash</span>
+              <span class="badge">Proxmox</span>
+              <span class="badge">DevOps</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3><a href="https://docs.diegovargas.es/" target="_blank" rel="noopener">docs.diegovargas.es</a></h3>
+              <a class="project-link" href="https://docs.diegovargas.es/" target="_blank" rel="noopener" aria-label="Visitar la documentación">↗</a>
+            </div>
+            <p>Sitio de documentación personal donde comparto conocimientos, guías y recursos técnicos.</p>
+            <ul>
+              <li>Guías sobre Linux, Docker, redes, automatización, correo y monitorización auto-alojada.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="badge">Jekyll</span>
+              <span class="badge">Linux</span>
+              <span class="badge">Docker</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3><a href="https://github.com/f1rul4yx" target="_blank" rel="noopener">Más en GitHub</a></h3>
+              <a class="project-link" href="https://github.com/f1rul4yx" target="_blank" rel="noopener" aria-label="Ver todos los repositorios">↗</a>
+            </div>
+            <p>Explora el resto de repositorios: experimentos, herramientas y proyectos personales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Homelab -->
+    <section id="homelab" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Homelab</h2>
+        <p class="section-text">
+          Entorno de virtualización con servicios auto-gestionados en Proxmox, donde despliego un homelab
+          personal con servicios reales: desde la red local hasta medios y entretenimiento.
+        </p>
+        <div class="chip-grid">
+          <span class="chip">DHCP</span>
+          <span class="chip">AdGuard Home</span>
+          <span class="chip">Reverse proxy</span>
+          <span class="chip">Servidor de correo (Postfix, Dovecot, Roundcube)</span>
+          <span class="chip">VPN</span>
+          <span class="chip">Jellyfin</span>
+          <span class="chip">Nextcloud</span>
+          <span class="chip">Home Assistant</span>
+          <span class="chip">Immich</span>
+          <span class="chip">Servidor de Minecraft</span>
+        </div>
+        <p class="section-text section-lead">
+          Desarrollo y despliegue de aplicaciones propias mediante Docker.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-text">
+          Si quieres colaborar en un proyecto, tienes dudas técnicas o simplemente quieres charlar sobre
+          tecnología: estoy para lo que se pueda automatizar.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:hola@diegovargas.es">hola@diegovargas.es</a>
+          <a class="btn btn-outline" href="https://github.com/f1rul4yx" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/diegovargasgomezderequena/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-outline" href="https://docs.diegovargas.es/" target="_blank" rel="noopener">Documentación</a>
+          <a class="btn btn-outline" href="tel:+34722681061">+34 722 681 061</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Diego Vargas Gómez de Requena</p>
+      <p class="footer-sub">Administrador de Sistemas Informáticos en Red</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
